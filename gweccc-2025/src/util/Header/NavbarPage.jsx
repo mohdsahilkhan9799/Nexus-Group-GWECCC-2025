@@ -48,9 +48,9 @@ const NavbarPage = () => {
         <div className={`collapse navbar-collapse  ${isMenuOpen ? "show" : ""}`} id="navbarNav">
           <ul className="navbar-nav mx-auto ">
             <li className="nav-item px-3"><Link className="nav-link" to="/" onClick={handleMenuClick}>Home</Link></li>
-            <li className="nav-item px-3"><Link className="nav-link" to="#about" onClick={handleMenuClick}>About</Link></li>
-            <li className="nav-item px-3"><Link className="nav-link" to="/Speakers" onClick={handleMenuClick}>Speakers & Agenda</Link></li>
-            <li className="nav-item px-3"><Link className="nav-link" to="/Schedule" onClick={handleMenuClick}>Schedule</Link></li>
+            <li className="nav-item px-3"><Link className="nav-link" to="/about" onClick={handleMenuClick}>About</Link></li>
+            <li className="nav-item px-3"><Link className="nav-link" to="/speakers" onClick={handleMenuClick}>Speakers & Agenda</Link></li>
+            <li className="nav-item px-3"><Link className="nav-link" to="/schedule" onClick={handleMenuClick}>Schedule</Link></li>
             <li className="nav-item px-3"><Link className="nav-link" to="/contact" onClick={handleMenuClick}>Contact</Link></li>
             <li className="nav-item px-3"><Link to="/register" className="btn appointment-btn nav-link px-4 " onClick={handleMenuClick}>Register</Link></li>
           </ul>

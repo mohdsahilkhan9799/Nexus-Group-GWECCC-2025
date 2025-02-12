@@ -1,0 +1,138 @@
+
+
+/* 🌍 Contact Section */
+.contact-section {
+    background: #f5f5f5;
+    padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    max-width: 1000px;
+    text-align: center;
+  }
+  
+  /* 🎭 Title Styling */
+  .title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #d50000;
+    border-bottom: 3px solid #d50000;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  /* 📞 Contact Content */
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  /* 🏢 Contact Information */
+  .contact-info {
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+  
+  .contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info i {
+    color: #d50000;
+    margin-right: 10px;
+  }
+  
+  /* ✉️ Contact Form */
+  .contact-form {
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .input-group textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.9rem;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  /* 🚀 Submit Button */
+  .submit-btn {
+    background: #d50000;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .submit-btn:hover {
+    background: #a30000;
+  }
+  
+  /* 🗺️ Google Maps */
+  .map-container {
+    margin-top: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 📱 Responsive Design */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2.2rem;
+    }
+  
+    .contact-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-info, .contact-form {
+      width: 100%;
+    }
+  }
+  
