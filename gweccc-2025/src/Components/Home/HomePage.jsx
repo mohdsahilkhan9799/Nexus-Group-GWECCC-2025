@@ -284,7 +284,7 @@ const [activeDay, setActiveDay] = useState("Day 1");
                                 <p>{speaker.designation}</p>
                             </div>
                             {/* Downward Arrow Icon */}
-                            <div className="arrow-down">▼ <i className="fa-solid fa-eye"></i></div>
+                            <div className="arrow-down">▼ <FontAwesomeIcon icon="fa-solid fa-eye" /></div>
                             
                         </div>
                     ))}
@@ -353,7 +353,7 @@ const [activeDay, setActiveDay] = useState("Day 1");
         <div className="contact-content">
           {/* Left Side: Contact Information */}
           <div className="contact-info" data-aos="fade-right">
-            <h3>Contact Information</h3>
+            <h3> <i className="fa-solid fa-location-crosshairs"></i> Contact Information</h3>
             <p><i className="fas fa-map-marker-alt"></i> Address: Road 2832, BNH Tower 4th Floor – Building 2491 – Block 428, Bahrain</p>
             <p><i className="fas fa-envelope"></i> nexus@gweccc2025.com</p>
             <p><i className="fas fa-phone"></i> +973 1751 1777</p>
