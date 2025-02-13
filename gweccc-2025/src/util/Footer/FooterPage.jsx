@@ -2,6 +2,7 @@ import React from 'react';
 import './FooterPage.css'; // Custom CSS
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import eventlogo from "../../Logo/Nexus Logo.png"
 
 const FooterPage = () => {
   return (
@@ -11,13 +12,14 @@ const FooterPage = () => {
         {/* Logo & Address Section */}
         <div className="footer-section">
           <h2>
-            <div className="logo-animation">
+            <div className="logo-animation d-flex gap-5">
               <img 
                 src="https://gweccc.com/assets/logo/main_logo/gweccc_white.png" 
                 alt="GWECCC Logo" 
                 width={130} 
                 height={60} 
               />
+            
             </div>
             GWECCC 2025
           </h2>
@@ -33,6 +35,7 @@ const FooterPage = () => {
 
         {/* Social Media Section */}
         <div className="footer-section">
+          
           <h3>Follow Us</h3>
           <div className="social-icons">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
@@ -47,8 +50,13 @@ const FooterPage = () => {
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
+
+            
           </div>
+
+         
         </div>
+        
       </div>
 
       {/* Footer Bottom */}
