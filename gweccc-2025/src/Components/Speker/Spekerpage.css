@@ -1,153 +1,308 @@
+/* 🌍 Speakers Section */
+.speakers-section {
+  background: #f9f9f9;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* 🎭 Title Styling */
+.title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  color: #d50000;
+  border-bottom: 3px solid #d50000;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* 🎙️ Speaker Grid Layout */
+.speakers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* 🔥 Speaker Card */
+.speaker-card {
+  width: 280px;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+}
+
+/* 🏆 Hover Effect */
+.speaker-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* 🖼️ Speaker Image */
+.speaker-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #d50000;
+  padding: 5px;
+  margin-left: 79px;
+}
+
+/* 📝 Speaker Info */
+.speaker-info {
+  margin-top: 15px;
+}
+
+.speaker-info h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.speaker-info p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* 🔻 Downward Arrow Animation */
+.arrow-down {
+  font-size: 1.5rem;
+  color: #d50000;
+  margin-top: 15px;
+  animation: bounceArrow 1.5s infinite alternate;
+}
+
+/* 🔽 Arrow Bounce Animation */
+@keyframes bounceArrow {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(5px); }
+}
+
+/* 🎭 Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: slideUp 0.4s ease-in-out;
+}
+
+/* ✨ Modal Slide-Up Animation */
+@keyframes slideUp {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* 🖼️ Modal Image */
+.modal-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #d50000;
+  padding: 5px;
+}
+
+/* 🏆 Speaker Designation */
+.modal-designation {
+  font-weight: bold;
+  color: #333;
+}
+
+/* 📜 Speaker Description */
+.modal-description {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* ❌ Close Button */
+.close-modal {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .title {
+      font-size: 2.2rem;
+  }
+
+  .speakers-grid {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .speaker-card {
+      width: 90%;
+  }
+
+  .modal-content {
+      width: 90%;
+  }
+}
+
+
+
+/* 🌍 Agenda Section */
+.agenda-section {
+  background: #f9f9f9;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* 🎭 Agenda Title */
+.agenda-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  color: #d50000;
+  border-bottom: 3px solid #d50000;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* 📜 Agenda List */
+.agenda-list {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* 🔥 Agenda Item */
+.agenda-item {
+  background: white;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* 🏆 Hover Effect */
+.agenda-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* 📝 Agenda Header */
+.agenda-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.agenda-header h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.agenda-time {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555555;
+  margin-left: 10px;
+}
+
+.agenda-arrow {
+  font-size: 1.5rem;
+  color: #d50000;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
 
 
 /* 🌍 Speakers Section */
 .speakers-section {
-    background: #f5f5f5;
+    background: #ffffff;
     padding: 100px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .container {
-    max-width: 1200px;
     text-align: center;
-  }
-  
-  /* 🎭 Title Styling */
-  .title {
+}
+
+/* 🎭 Title */
+.title {
     font-size: 2.8rem;
     font-weight: bold;
     margin-bottom: 50px;
     text-transform: uppercase;
-    color: #d50000;
-    border-bottom: 3px solid #d50000;
+    color: #007bff;
+    border-bottom: 3px solid #007bff;
     display: inline-block;
     padding-bottom: 10px;
-  }
-  
-  /* 🎙️ Speaker Grid Layout */
-  .speakers-grid {
+}
+
+/* 🔥 Speaker Grid */
+.speakers-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
     justify-content: center;
-  }
-  
-  /* 🔥 Speaker Card */
-  .speaker-card {
-    width: 260px;
+}
+
+/* 🔥 Speaker Card */
+.speaker-card {
     background: white;
     border-radius: 15px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
-  }
-  
-  /* 🏆 Hover Effect */
-  .speaker-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* 🖼️ Speaker Image */
-  .speaker-image img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #d50000;
-    padding: 5px;
-  }
-  
-  /* 📝 Speaker Info */
-  .speaker-info {
-    margin-top: 15px;
-  }
-  
-  .speaker-info h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  
-  .speaker-info p {
-    font-size: 1rem;
-    color: #666;
-  }
-  
-  /* 🎭 Modal Styles */
-  .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    margin-bottom: 30px;
+    visibility: visible !important; /* ✅ Fix */
+}
+
+.speaker-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 🎭 Modal Styles */
+.modal-overlay {
     background: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
-  }
-  
-  .modal-content {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    width: 400px;
-    text-align: center;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
-    position: relative;
-  }
-  
-  .modal-image {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #d50000;
-    padding: 5px;
-  }
-  
-  .modal-designation {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .modal-description {
-    font-size: 1rem;
-    color: #555;
-    margin-top: 10px;
-  }
-  
-  /* ❌ Close Button */
-  .close-modal {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  /* 📱 Responsive Design */
-  @media (max-width: 768px) {
-    .title {
-      font-size: 2.2rem;
-    }
-  
-    .speakers-grid {
-      flex-direction: column;
-      align-items: center;
-    }
-  
+}
+
+/* 🌟 Fix Speaker Visibility Issue */
+.speaker-card img {
+    display: block;
+    visibility: visible !important;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
     .speaker-card {
-      width: 90%;
+        width: 90%;
     }
-  
-    .modal-content {
-      width: 90%;
-    }
-  }
-  
-  
+}

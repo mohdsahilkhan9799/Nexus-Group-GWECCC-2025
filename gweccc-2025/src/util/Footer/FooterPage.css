@@ -1,6 +1,6 @@
 .footer-container {
-    background-color: #ebd9d9;
-    color: black;
+  background: #021a4a; /* Dark background for a premium look */
+    color: white;
     padding: 20px;
     font-family: Arial, sans-serif;
     animation: fadeIn 1s ease-in-out; /* Fade-in animation for the footer */
