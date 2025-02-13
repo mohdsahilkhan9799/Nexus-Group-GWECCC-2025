@@ -42,9 +42,9 @@ const scheduleData = {
     { time: "2:00 PM", title: "Renewable Energy Innovations", speaker: "H.E. Shaikh Khalid Bin Abdulla Al Khalifa", description: "EEvent Patron." }
   ],
   "Day 2": [
-    { time: "10:00 AM", title: "Smart Water Management", speaker: "Dr. Robert White", description: "Technology-driven solutions for water conservation." },
-    { time: "12:00 PM", title: "Digital Transformation in Governance", speaker: "Ms. S Radha Chauhan", description: "How technology is reshaping government services." },
-    { time: "3:00 PM", title: "Closing Remarks", speaker: "Mr. IPS Sethi", description: "Final thoughts and wrap-up of GWECCC 2025." }
+    { time: "2:00 PM", title: "Renewable Energy Innovations", speaker: "H.E. Shaikh Khalid Bin Abdulla Al Khalifa", description: "EEvent Patron." },
+    { time: "10:00 AM", title: "Opening Ceremony", speaker: "H.E. Dr. Mohamed bin Mubarak Bin Daina", description: "Advisory Committee & Conference Chair" },
+    { time: "11:30 AM", title: "Climate Change & Policy", speaker: "H.E. Faihan Mohamed Al Faihani", description: "Steering Committee Chair" },
   ]
 };
 const HomePage = () => {
@@ -136,8 +136,8 @@ const [activeDay, setActiveDay] = useState("Day 1");
           <Tilt options={{ max: 25, speed: 400 }}>
             <div className="slide" id="home" style={{ backgroundImage: "url('https://img.freepik.com/free-photo/3d-rendering-dark-earth-space_23-2151051362.jpg?ga=GA1.1.1828204049.1737634267&semt=ais_authors_boost')" }}>
               <div className="slider-content">
-                <h1 data-aos="fade-up">🌍 GWECCC 2025</h1>
-                <p data-aos="zoom-in">Global Water, Energy & Climate Change Congress</p>
+                <h1 >🌍 GWECCC 2025</h1>
+                <p >Global Water, Energy & Climate Change Congress</p>
               </div>
             </div>
           </Tilt>
@@ -147,8 +147,8 @@ const [activeDay, setActiveDay] = useState("Day 1");
           <Tilt options={{ max: 25, speed: 400 }}>
             <div className="slide" style={{ backgroundImage: "url('https://img.freepik.com/free-photo/3d-rendering-dark-earth-space_23-2151051369.jpg?ga=GA1.1.1828204049.1737634267&semt=ais_authors_boost')" }}>
               <div className="slider-content">
-                <h1 data-aos="fade-up">📍 Location:</h1>
-                <p data-aos="zoom-in">Kingdom of Bahrain</p>
+                <h1 >📍 Location:</h1>
+                <p >Kingdom of Bahrain</p>
               </div>
             </div>
           </Tilt>
@@ -232,6 +232,11 @@ const [activeDay, setActiveDay] = useState("Day 1");
           </div>
         </div>
 
+        <div className="reg">
+  <h3 data-aos="fade-up" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Register
+  </h3>
+</div>
 
          {/* Key Highlights Section */}
       <div className="highlights-section">

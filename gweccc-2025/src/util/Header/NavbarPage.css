@@ -201,3 +201,23 @@
     transform: translateY(-12px);
   }
 }
+
+
+.navbar-toggler {
+  z-index: 1050; /* Ensure it's above other elements */
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none; /* Remove focus outline */
+}
+
+/* Ensure it displays properly in mobile views */
+@media (max-width: 991px) {
+  .navbar-toggler {
+    display: block !important;
+  }
+}
+
+

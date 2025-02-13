@@ -44,6 +44,8 @@ const NavbarPage = () => {
       });
     }
   };
+
+  
   return (
     <>
     <nav className={`navbar backgodnav fixed-top navbar-expand-lg ${navbarScrolled ? "navbar-scrolled" : ""}`}>
@@ -129,8 +131,18 @@ const NavbarPage = () => {
                 style={{ fontSize: "2rem", color: "#007bff" }}
               ></i>
             </div>
-            <h3 className="mb-4">Log In</h3>
+            <h3 className="mb-4">Registration</h3>
             <form>
+              <div className="mb-3">
+                <input
+                  name="name"
+                  type="name"
+                  id="formBasicName"
+                  className="form-control"
+                  placeholder="Name"
+                  required
+                />
+              </div>
               <div className="mb-3">
                 <input
                   name="email"
@@ -138,6 +150,16 @@ const NavbarPage = () => {
                   id="formBasicEmail"
                   className="form-control"
                   placeholder="Email address"
+                  required
+                />
+              </div>
+              <div className="mb-3">
+                <input
+                  name="contact"
+                  type="contact"
+                  id="formBasiccontact"
+                  className="form-control"
+                  placeholder="Phone "
                   required
                 />
               </div>
@@ -152,7 +174,7 @@ const NavbarPage = () => {
                 />
               </div>
               <button type="submit" className="btn btn-primary w-100 mb-3">
-                Sign In
+              Sign up
               </button>
             </form>
             <p className="mb-5 text-muted">
