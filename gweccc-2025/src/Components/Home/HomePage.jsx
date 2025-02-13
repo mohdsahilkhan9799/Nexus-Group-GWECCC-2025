@@ -359,7 +359,7 @@ const [activeDay, setActiveDay] = useState("Day 1");
           {/* Left Side: Contact Information */}
           <div className="contact-info" data-aos="fade-right">
             <h3> <i className="fa-solid fa-location-crosshairs"></i> Contact Information</h3>
-            <p><i className="fas fa-map-marker-alt"></i> Address: Road 2832, BNH Tower 4th Floor – Building 2491 – Block 428, Bahrain</p>
+            <p>Address: Road 2832, BNH Tower 4th Floor – Building 2491 – Block 428, Bahrain</p>
             <p><i className="fas fa-envelope"></i> nexus@gweccc2025.com</p>
             <p><i className="fas fa-phone"></i> +973 1751 1777</p>
 
