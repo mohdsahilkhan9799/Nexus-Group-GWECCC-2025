@@ -133,3 +133,118 @@
     }
   }
   
+
+  
+/* Countdown Timer */
+.countdown {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.timer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.time {
+  background: #007bff;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .event-overview {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .text-content {
+      text-align: center;
+  }
+
+  .timer {
+      flex-direction: column;
+  }
+}
+
+.about-section {
+  background: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.about-content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-content {
+  max-width: 600px;
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.image-container {
+  max-width: 500px;
+}
+
+.event-image {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.event-image:hover {
+  transform: scale(1.05);
+}
+
+.countdown .timer {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.time {
+  background: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* CTA Section */
+.cta-section {
+  margin-top: 50px;
+}
+
+.cta-button {
+  background: #28a745;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+.cta-button:hover {
+  background: #218838;
+}
