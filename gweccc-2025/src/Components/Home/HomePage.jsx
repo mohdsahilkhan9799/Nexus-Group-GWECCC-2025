@@ -358,10 +358,10 @@ const [activeDay, setActiveDay] = useState("Day 1");
         <div className="contact-content">
           {/* Left Side: Contact Information */}
           <div className="contact-info" data-aos="fade-right"style={{overflow:"hidden"}}>
-            <h3> <i className="fa-solid fa-location-crosshairs"></i> Contact Information</h3>
-            <p>Address: Road 2832, BNH Tower 4th Floor – Building 2491 – Block 428, Bahrain</p>
-            <p><i className="fas fa-envelope"></i> nexus@gweccc2025.com</p>
-            <p><i className="fas fa-phone"></i> +973 1751 1777</p>
+            <h3 className="text-center text-danger">  Contact Information</h3>
+            <p className="text-center">Address: Road 2832, BNH Tower 4th Floor Building 2491 Block 428, Bahrain</p>
+            <p className="text-center"> nexus@gweccc2025.com</p>
+            <p className="text-center">+973 1751 1777</p>
 
             {/* Google Maps Embed */}
             <div className="map-container" data-aos="fade-up"style={{overflow:"hidden"}}>
