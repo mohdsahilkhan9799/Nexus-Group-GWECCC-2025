@@ -54,7 +54,7 @@ const HomePage = () => {
   }, []);
  
 const calculateTimeLeft = () => {
-    const eventDate = new Date("February 15, 2025 00:00:00").getTime();
+    const eventDate = new Date("February 25, 2025 00:00:00").getTime();
     const now = new Date().getTime();
     const difference = eventDate - now;
 
@@ -158,7 +158,7 @@ const [activeDay, setActiveDay] = useState("Day 1");
           <Tilt options={{ max: 25, speed: 400 }}>
             <div className="slide" style={{ backgroundImage: "url('https://img.freepik.com/free-photo/earth-seen-from-space_23-2150528639.jpg?ga=GA1.1.1828204049.1737634267&semt=ais_authors_boost')" }}>
               <div className="slider-content">
-                <h1 data-aos="fade-up">📅 Date: 14/01/2025</h1>
+                <h1 data-aos="fade-up">📅 Date: 25/01/2025</h1>
               </div>
             </div>
           </Tilt>
@@ -192,7 +192,7 @@ const [activeDay, setActiveDay] = useState("Day 1");
     and industry leaders to discuss the future of water, energy, and climate change resilience.
   </p>
   <p data-aos="fade-right px-2"style={{overflow:"hidden"}}>
-    The event will be held in the <b>Kingdom of Bahrain</b> on <b>February 14, 2025</b>.
+    The event will be held in the <b>Kingdom of Bahrain</b> on <b>February 25, 2025</b>.
     Join us for thought-provoking sessions, expert panels, and networking opportunities.
   </p>
 </motion.div>
