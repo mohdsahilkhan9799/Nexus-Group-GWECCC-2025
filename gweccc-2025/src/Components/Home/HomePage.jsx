@@ -123,7 +123,7 @@ const [activeDay, setActiveDay] = useState("Day 1");
          
   return (
     <>
-    <div className="homepage">
+    <div className="homepage" style={{overflow:"hidden"}}>
       {/* 🚀 3D Parallax Slider */}
       <Swiper
         modules={[Autoplay, Navigation]}
@@ -185,13 +185,13 @@ const [activeDay, setActiveDay] = useState("Day 1");
   animate={{ y: 0, opacity: 1 }}
   transition={{ duration: 1 }}
 >
-  <p data-aos="fade-left px-2">
+  <p data-aos="fade-left px-2" style={{overflow:"hidden"}}>
     The <b>Global Water, Energy & Climate Change Congress (GWECCC)</b> 2025
     is an international event focused on sustainability, innovation,
     and global policy solutions. It brings together experts, policymakers, 
     and industry leaders to discuss the future of water, energy, and climate change resilience.
   </p>
-  <p data-aos="fade-right px-2">
+  <p data-aos="fade-right px-2"style={{overflow:"hidden"}}>
     The event will be held in the <b>Kingdom of Bahrain</b> on <b>February 14, 2025</b>.
     Join us for thought-provoking sessions, expert panels, and networking opportunities.
   </p>
@@ -232,7 +232,7 @@ const [activeDay, setActiveDay] = useState("Day 1");
           </div>
         </div>
 
-        <div className="reg">
+        <div className="reg"style={{overflow:"hidden"}}>
   <h3 data-aos="fade-up" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Register
   </h3>
@@ -242,24 +242,24 @@ const [activeDay, setActiveDay] = useState("Day 1");
       <div className="highlights-section">
         <h3 className="highlight-title about-title1" data-aos="fade-up">Key Highlights</h3>
 
-        <div className="highlights-grid">
-          <div className="highlight-card" data-aos="flip-left">
+        <div className="highlights-grid"style={{overflow:"hidden"}}>
+          <div className="highlight-card" data-aos="flip-left"style={{overflow:"hidden"}}>
             <h4>🌍 Global Sustainability Discussions</h4>
           </div>
 
-          <div className="highlight-card" data-aos="flip-right">
+          <div className="highlight-card" data-aos="flip-right"style={{overflow:"hidden"}}>
             <h4>💡 Energy Innovation & Green Technologies</h4>
           </div>
 
-          <div className="highlight-card" data-aos="flip-left">
+          <div className="highlight-card" data-aos="flip-left"style={{overflow:"hidden"}}>
             <h4>📢 Expert Panels & Keynote Speeches</h4>
           </div>
 
-          <div className="highlight-card" data-aos="flip-right">
+          <div className="highlight-card" data-aos="flip-right"style={{overflow:"hidden"}}>
             <h4>🌿 Climate Action Strategies</h4>
           </div>
 
-          <div className="highlight-card" data-aos="flip-left">
+          <div className="highlight-card" data-aos="flip-left"style={{overflow:"hidden"}}>
             <h4>🤝 Networking with Global Leaders</h4>
           </div>
         </div>
@@ -269,9 +269,9 @@ const [activeDay, setActiveDay] = useState("Day 1");
     {/* about */}
 
     {/* speakers */}
-    <section className="speakers-section"id="speakers">
+    <section className="speakers-section"id="speakers"style={{overflow:"hidden"}}>
             <div className="container">
-                <h2 className=" about-title1" data-aos="fade-up" >Our Speakers</h2>
+                <h2 className=" about-title1" data-aos="fade-up"style={{overflow:"hidden"}} >Our Speakers</h2>
 
                 <div className="row speakers-grid">
                     {speakers.map((speaker, index) => (
@@ -314,9 +314,9 @@ const [activeDay, setActiveDay] = useState("Day 1");
 
     {/* schedule */}
     <div>
-       <section className="schedule-section"id="schedule">
+       <section className="schedule-section"id="schedule"style={{overflow:"hidden"}}>
       <div className="container">
-        <h2 className="title" data-aos="fade-up" >Event Schedule</h2>
+        <h2 className="title" data-aos="fade-up" style={{overflow:"hidden"}}>Event Schedule</h2>
 
         {/* Day Selector Tabs */}
         <div className="tabs">
@@ -328,7 +328,7 @@ const [activeDay, setActiveDay] = useState("Day 1");
         </div>
 
         {/* Schedule Details */}
-        <div className="schedule-details" data-aos="fade-up">
+        <div className="schedule-details" data-aos="fade-up"style={{overflow:"hidden"}}>
           {scheduleData[activeDay].map((session, index) => (
             <div key={index} className="session-card">
               <div className="session-header" onClick={() => setExpandedSession(expandedSession === index ? null : index)}>
@@ -351,20 +351,20 @@ const [activeDay, setActiveDay] = useState("Day 1");
 
 
     {/* contact */}
-    <section className="contact-section"id="contact">
+    <section className="contact-section"id="contact"style={{overflow:"hidden"}}>
       <div className="container" >
-        <h2 className="title" data-aos="fade-up">Get in Touch</h2>
+        <h2 className="title" data-aos="fade-up"style={{overflow:"hidden"}}>Get in Touch</h2>
 
         <div className="contact-content">
           {/* Left Side: Contact Information */}
-          <div className="contact-info" data-aos="fade-right">
+          <div className="contact-info" data-aos="fade-right"style={{overflow:"hidden"}}>
             <h3> <i className="fa-solid fa-location-crosshairs"></i> Contact Information</h3>
             <p>Address: Road 2832, BNH Tower 4th Floor – Building 2491 – Block 428, Bahrain</p>
             <p><i className="fas fa-envelope"></i> nexus@gweccc2025.com</p>
             <p><i className="fas fa-phone"></i> +973 1751 1777</p>
 
             {/* Google Maps Embed */}
-            <div className="map-container" data-aos="fade-up">
+            <div className="map-container" data-aos="fade-up"style={{overflow:"hidden"}}>
               <iframe
                 title="Google Maps"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231850.30212946268!2d50.43237651208621!3d26.06670076240314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49a582ab822f11%3A0x8225b66fc93e193a!2sManama%2C%20Bahrain!5e0!3m2!1sen!2sbh!4v1679986754567"
@@ -377,7 +377,7 @@ const [activeDay, setActiveDay] = useState("Day 1");
           </div>
 
           {/* Right Side: Contact Form */}
-          <div className="contact-form" data-aos="fade-left">
+          <div className="contact-form" data-aos="fade-left"style={{overflow:"hidden"}}>
             {submitted && <p className="success-message">Your message has been sent successfully!</p>}
             <form onSubmit={handleSubmit}>
               <div className="input-group">
@@ -400,7 +400,7 @@ const [activeDay, setActiveDay] = useState("Day 1");
           </div>
         </div>
 
-        <div className="map-container" data-aos="fade-up">
+        <div className="map-container" style={{overflow:"hidden"}}>
               <iframe
                 title="Google Maps"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231850.30212946268!2d50.43237651208621!3d26.06670076240314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49a582ab822f11%3A0x8225b66fc93e193a!2sManama%2C%20Bahrain!5e0!3m2!1sen!2sbh!4v1679986754567"
